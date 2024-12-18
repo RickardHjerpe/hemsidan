@@ -1,0 +1,116 @@
+:root {
+    --color1: #F8FAFC;
+    --color2: #D9EAFD;
+    --color3: #BCCCDC;
+    --color4: #9AA6B2;
+  }
+
+* {
+    margin: 0; /* Nollställer marginaler för alla element */
+    padding: 0; /* Nollställer padding för alla element */
+    box-sizing: border-box; /* Gör att padding och border inkluderas i elementets storlek */
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+#homeHeader {
+    text-align: center;
+    background: var(--color4);
+    font-size: 30px;
+    height: 100vh;
+    padding-top: 40vh;
+    color: var(--color1);
+    animation: colorChange 2s ease-in-out;
+}
+
+header{
+    text-align: center;
+    background: var(--color4);
+    font-size: 30px;
+    height: 20vh;
+    padding-top: 2vh;
+    color: var(--color1);
+    animation: colorChange 2s ease-in-out;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: gray; /* Initial color */
+    }
+    100% {
+        background-color: var(--color4); /* Final color */
+    }
+}
+
+p{
+    padding: 1rem;
+}
+h1{
+    size: 2rem;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color2);
+    width: 100%;
+}
+nav{
+    position: sticky; /* Gör navbaren fast */
+    top: 0; /* Fäster den högst upp på sidan */
+    z-index: 1000;
+}
+
+li {
+    float: left;
+    width: 25%;
+    
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: var(--color4);
+    
+}
+li a:hover {
+    background-color: var(--color3);
+}
+
+  
+
+.row{
+    color:#ff0000;
+    display: flex;
+    width: 100%;
+}
+
+.col{
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--color3);
+    color: var(--color1);
+    font-size: 2rem;
+
+}
+.col:hover{
+    background-color: var(--color4);
+
+}
+
+#first{
+    
+}
+#second{
+
+}
+#third{
+
+}
